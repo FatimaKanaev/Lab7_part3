@@ -20,7 +20,8 @@
  * Meaning that giving the same initial state and set of rules, 
  * the automaton will always produce the same pattern (but they will change because of the different starting condition)
  * 
- * 
+ * Question 30: 
+ * We can store previous values in memory instead of using the nextState Array
  */
 
 public class AutomatonController
