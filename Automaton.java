@@ -51,13 +51,13 @@ public class Automaton
         // Naively update the state of each cell
         // based on the state of its two neighbors.
 
-        //Question 28
+        //Question 28-29
         for (int i = 0; i < state.length; i++) {
             int left = (i == 0) ? 0 : state[i - 1];
             int right = (i == state.length - 1) ? 0 : state[i + 1];
-            nextState[i] = (left + state[i] + right) % 2;
-        }
 
+            state[i] = (left + state[i] + right) % 2;
+        }
         state = nextState;
     }
     
